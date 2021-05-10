@@ -15,7 +15,6 @@ const base = `${__dirname}/public`;
 
 app.use(express.static('public'));  
 
-
 app.get('/', function(req, res) {
   res.sendFile(`${base}/login.html`);
 });
