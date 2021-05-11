@@ -16,22 +16,12 @@
         <input type="text" id="uname" placeholder="Username" required>
         <input type="password" id="pass" placeholder="Password" required>
         <button class="sub" onclick="validateForm()">Login</button>
-        <p id="demo"><p></p></p>
+        <button class="sub" onclick="window.location.href='/create'">Create New User</button>
+        <p id="demo"></p>
     </div>
 
-    <script>
-        function validateForm() {
-
-            var username = document.getElementById("uname").value; //uname
-            var password = document.getElementById("pass").value; //pass
-
-            if (username == "admin" && password == "admin") {
-                document.getElementById('demo').innerHTML = '<p id="demo" style="color: green;">Success</p>';
-            }else{
-                document.getElementById('demo').innerHTML = '<p id="demo" style="color: red;">Error</p>';
-            }
-        }
-    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>

@@ -15,11 +15,23 @@ const base = `${__dirname}/public`;
 
 app.use(express.static('public'));  
 
-
 app.get('/', function(req, res) {
   res.sendFile(`${base}/login.html`);
 });
 
+app.get('/create', function(req, res) {
+  res.sendFile(`${base}/create.html`);
+});
+
+// app.get('/qr', function(req, res) {
+//   res.sendFile(`${base}/qr_code.html`);
+// });
+
 app.get('/test', function(req, res) {
   res.sendFile(`${base}/test.html`);
+});
+
+app.get('/db_view', function(req, res) {
+  
+  res.sendFile(`${base}/db_view.html`);
 });
