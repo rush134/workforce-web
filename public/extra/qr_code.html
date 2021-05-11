@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>َQR Code</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="box">
+
+        <!-- <img src="logo.png" width="40%" height="40%"> -->
+
+        <h1>QR Code</h1>
+        <p id="demo"></p>
+    </div>
+
+    <script>
+        // var el = $( '<div></div>' );
+        var code = new DOMParser().parseFromString(location.search.split('code=')[1], "text/html")
+        var codea = location.search.split('code=')[1]
+
+        // document.getElementById('demo').innerHTML = `<p id="demo" style="color: green;">${code}</p>`;
+        document.getElementById('demo').innerHTML = `<p id="demo" style="color: green;"><div style="width: 150px;height: 150px;">${code}</div></p>`;
+
+    </script>
+</body>
+
+</html>

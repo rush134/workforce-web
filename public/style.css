@@ -16,6 +16,11 @@ body{
     text-align: center;
 }
 
+.box input[type = "submit"]:hover{
+    background: #2ecc71;
+}
+
+
 .box h1{
     color: white;
     text-transform: uppercase;
@@ -56,12 +61,6 @@ body{
     transition: 0.25s;
     cursor: pointer;
 }
-
-
-.box input[type = "submit"]:hover{
-    background: #2ecc71;
-}
-
 
 .sub{
     border:0;

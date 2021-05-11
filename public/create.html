@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>َLogin Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="box">
+
+        <!-- <img src="logo.png" width="40%" height="40%"> -->
+
+        <h1>Create New User</h1>
+        <input type="text" id="name" placeholder="Name" required>
+        <input type="text" id="age" placeholder="Age" required>
+        <input type="text" id="department" placeholder="Department" required>
+        <input type="text" id="supervisor" placeholder="Supervisor" required>
+        <input type="text" id="duties" placeholder="Duties" required>
+        <input type="text" id="license" placeholder="License" required>
+        <button class="sub" onclick="create()">Create</button>
+        <button class="sub" onclick="window.location.href='/'">Back to Login</button>
+        <p id="demo"></p>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</body>
+
+</html>
