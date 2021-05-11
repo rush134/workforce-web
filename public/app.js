@@ -1,6 +1,8 @@
 // var request = require('request');
 
-var API_URL = 'http://localhost:5000'; // The weebsite where API will be hosted
+// var API_URL = 'http://localhost:5000'; // The weebsite where API will be hosted
+var API_URL = 'https://work--force-api.herokuapp.com'; // The weebsite where this will be hosted
+
 
 // working
 function validateForm() {
