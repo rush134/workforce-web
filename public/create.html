@@ -13,12 +13,24 @@
         <!-- <img src="logo.png" width="40%" height="40%"> -->
 
         <h1>Create New User</h1>
-        <input type="text" id="name" placeholder="Name" required>
+        <input type="text" id="name" placeholder="Username" required>
+        <input type="password" id="password" placeholder="Password" required>
         <input type="text" id="age" placeholder="Age" required>
-        <input type="text" id="department" placeholder="Department" required>
-        <input type="text" id="supervisor" placeholder="Supervisor" required>
-        <input type="text" id="duties" placeholder="Duties" required>
-        <input type="text" id="license" placeholder="License" required>
+
+        <h5>Choose Role</h5>
+        <input type="radio" name="radio_role" value="ceo"><z>CEO</z>
+        <input type="radio" name="radio_role" value="supervisor"><z>Supervisor</z>
+        <input type="radio" name="radio_role" value="employee"><z>Employee</z>
+
+        <h5>Choose Department</h5>
+        <!-- <input type="text" id="department" placeholder="Department" required> -->
+        <input type="radio" name="radio_dept" value="admin"><z>Admin</z>
+        <input type="radio" name="radio_dept" value="normal"><z>Normal</z>
+        <input type="radio" name="radio_dept" value="forklift"><z>Forklift</z>
+
+        <!-- <input type="text" id="supervisor" placeholder="Supervisor" required> -->
+        <!-- <input type="text" id="duties" placeholder="Duties" required> -->
+        <!-- <input type="text" id="license" placeholder="License" required> -->
         <button class="sub" onclick="create()">Create</button>
         <button class="sub" onclick="window.location.href='/'">Back to Login</button>
         <p id="demo"></p>

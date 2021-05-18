@@ -27,6 +27,17 @@ body{
     font-weight: 500;
 }
 
+.box h5{
+    color: white;
+    font-weight: 200;
+}
+
+.box z{
+    color: white;
+    font-weight: 200; 
+    font-size: small;
+}
+
 .box input[type = "text"],.box input[type = "password"]{
     border:0;
     background: none;
