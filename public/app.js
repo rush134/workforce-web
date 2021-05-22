@@ -26,7 +26,7 @@ function authenticate() {
             location.href = '/db_view';
         }
         else {
-            document.getElementById('demo').innerHTML = `<p id="demo" style="color:red;">Response: ${response}</p>`;
+            document.getElementById('demo').innerHTML = `<p id="demo" style="color:red;">Response: ${response.message}</p>`;
             // console.log($,{response});
             const isAuthenticated = false;
             // console.log('fail');
