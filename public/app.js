@@ -10,7 +10,7 @@ function authenticate() {
     var username = document.getElementById("uname").value; //uname
     var password = document.getElementById("pass").value; //pass
 
-    $.post(`${API_URL}/api/authenticate`, { username, password }).then((response) => {
+    $.post(`${API_URL}/api/authenticate?username=${username}&password=${password}`).then((response) => {
         if (response.success) {
 
             document.getElementById('demo').innerHTML = '<p id="demo" style="color:green;">Success</p>';
@@ -62,7 +62,7 @@ function create() {
         }
     }
 
-    $.post(`${API_URL}/api/register`, { name, password, age, department, role }).then((response) => {
+    $.post(`${API_URL}/api/register?name=${name}&password=${password}&age=${age}&department=${department}&role=${role}`).then((response) => {
         if (response.success) {
             document.getElementById('demo').innerHTML = `<p id="demo" style="color:green;"> ${response.message}</p>`;
 
@@ -95,7 +95,7 @@ if (localStorage.getItem('isAuthenticated')) {
     let role = localStorage.getItem('role')
     let department = localStorage.getItem('department')
 
-    $.post(`${API_URL}/api/db`, { role, department }).then((response) => {
+    $.post(`${API_URL}/api/db?role=${role}&department=${department}`).then((response) => {
         document.getElementById('view_db').innerHTML = `${response}`;
     });
 }
