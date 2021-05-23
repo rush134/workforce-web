@@ -35,3 +35,7 @@ app.get('/db_view', function(req, res) {
   
   res.sendFile(`${base}/db_view.html`);
 });
+
+// app.get('/db_view_test', function(req, res) {
+//   res.sendFile(`${base}/db_test.html`);
+// });
